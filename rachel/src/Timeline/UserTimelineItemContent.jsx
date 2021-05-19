@@ -10,7 +10,8 @@ const useStyles = makeStyles((theme) => ({
       padding: '6px 16px',
     },
     label: {
-        marginLeft: '3px'
+        marginLeft: '3px',
+        marginBottom: '3px'
     }
   }));
 
