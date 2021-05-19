@@ -1,23 +1,20 @@
 import React from 'react';
+import {PostFooter} from './PostFooter';
 
-export Post = (props) => {
-  const [user, text, likes, comments, time] = props;
-  const title = user.name + " " + user.photo;
-  const subTitle = getTimeDif(time);
-  const getTimeDif = (time) => {
-    return Date.now() - time.getDate();
-  };
-  const addComment
-  return ( <
-    div >
-    <PostTitle/>
-    <PostContent/>
-    <
-    title > title < /title> <
-    h6 > subTitle < /h6>
-    <p>text</p>
-    <PostBottom likes comments addComment/>
-     <
-    /div>
+export const Post = (...props) => {
+  // const [id, publisher, lastUpdateDate, content, likes, comments, labels] = props;
+  // const addLike = (userId) => {
+
+  // };
+  // const addComment = () => {
+
+  // };
+
+  return (
+    <>
+      {/* <PostBar publisher labels time /> */}
+      {/* <PostContent content /> */}
+      <PostFooter likes comments addLike addComment />
+    </>
   );
 }

@@ -1,5 +1,6 @@
-import React from 'React';
+import React from 'react';
+import {Post} from './Post';
 
 export const App = () => {
-    return ( <div> hello </div>);
+    return ( <Post user='yarden' date />);
     };
