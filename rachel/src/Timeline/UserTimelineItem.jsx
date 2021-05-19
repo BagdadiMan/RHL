@@ -14,18 +14,18 @@ export const UserTimelineItem = (props) => {
 
     return (
         <TimelineItem>
-        <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            {`${hebrewMonthNames[startDate.getMonth()]} ${startDate.getFullYear().toString()}`}
-          </Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot>
-              <WorkIcon />
-            </TimelineDot>
-        <TimelineConnector />
-        </TimelineSeparator>
-        <UserTimelineItemContent item={props.item} />
+            <TimelineOppositeContent>
+            <Typography variant="body2" color="textSecondary">
+                {`${hebrewMonthNames[startDate.getMonth()]} ${startDate.getFullYear().toString()}`}
+            </Typography>
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+            <TimelineDot>
+                <WorkIcon />
+                </TimelineDot>
+            <TimelineConnector />
+            </TimelineSeparator>
+            <UserTimelineItemContent item={props.item} />
       </TimelineItem>
     );
 }
