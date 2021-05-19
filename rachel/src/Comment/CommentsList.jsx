@@ -12,7 +12,7 @@ const useStyles = makeStyles({
 export const CommentsList = (props) => {
     const comments = props.comments;
     const classes = useStyles();
-
+    console.log(comments)
     return (
     <Container>
         {comments.map(comment => <Comment className={classes.comment} key={comment.id} comment={comment}></Comment>)}
