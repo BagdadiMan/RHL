@@ -15,7 +15,7 @@ export const UserTimelineItem = (props) => {
     return (
         <TimelineItem>
             <TimelineOppositeContent>
-            <Typography variant="body2" color="textSecondary">
+            <Typography variant="body1" color="textSecondary" align="right">
                 {`${hebrewMonthNames[startDate.getMonth()]} ${startDate.getFullYear().toString()}`}
             </Typography>
             </TimelineOppositeContent>
