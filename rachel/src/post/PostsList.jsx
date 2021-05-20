@@ -3,10 +3,10 @@ import React from 'react';
 import { Post } from './Post';
 
 export const PostsList = (props) => {
-    const { posts } = props;
+    const { posts, loggedInUser } = props;
     return (
         <Container>
-            {posts.map(post => (<Post post={post} />))}
+            {posts.map(post => (<Post key={post.id} post={post} loggedInUser={loggedInUser} />))}
         </Container>
     );
 };
